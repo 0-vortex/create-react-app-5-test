@@ -115,13 +115,17 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: .
+          path: build
+
+      - run: ls -lahH
 
       - name: "📂 download diagram artifacts"
         uses: actions/download-artifact@v2
         with:
           name: diagram
-          path: ./public
+          path: .
+
+      - run: ls -lahH
 
       - name: "🚀 release"
         id: semantic-release

@@ -5,7 +5,7 @@
   "private": true,
   "license": "MIT",
   "files": [
-    "build"
+    "build/**/*"
   ],
   "bugs": "https://github.com/0-vortex/create-react-app-5-test/issues",
   "repository": {
