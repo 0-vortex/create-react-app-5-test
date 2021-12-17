@@ -16,7 +16,10 @@ module.exports = {
       "statements": 30
     }
   },
-  "coverageReporters": ["text"],
+  "coverageReporters": [
+    "text",
+    "text-summary"
+  ],
   "setupFiles": [
     "react-app-polyfill/jsdom"
   ],
