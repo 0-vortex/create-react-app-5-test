@@ -23,6 +23,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
+    "coverage": "npm run test -- --coverage",
     "storybook": "npx start-storybook -p 6006",
     "build-storybook": "npx build-storybook",
     "lint": "eslint . --report-unused-disable-directives",
