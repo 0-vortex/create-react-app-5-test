@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
 import ReactDOM from 'react-dom';
-import App from './App';
+import App from "./containers/App";
 import Config from "./config";
 import {getUserFromJwt} from "./lib/identityActions";
 import './index.css';
 import "react-loading-skeleton/dist/skeleton.css";
+import registerServiceWorker from "./registerServiceWorker";
 import reportWebVitals from './reportWebVitals';
 import OneGraphApolloClient from "onegraph-apollo-client";
 import {ApolloProvider, InMemoryCache} from "@apollo/client";
@@ -123,4 +124,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-// registerServiceWorker();
+registerServiceWorker();
