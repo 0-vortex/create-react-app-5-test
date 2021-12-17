@@ -122,10 +122,38 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+  deploy:
+    name: Deploy to static
+    needs:
+      - build
+      - release
+    runs-on: ubuntu-latest
+    steps:
+      - name: "☁️ checkout repository"
+        uses: actions/checkout@v2
+
+      - name: "📂 download artifacts"
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+          path: /home/runner/build
+
+      - name: "📂 copy artifacts"
+        run: cp -R /home/runner/build .
+
+      - name: "🚀 deploy static"
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          commit_message: ${{ github.event.head_commit.message }}
+          enable_jekyll: false
+
   cleanup:
     name: Cleanup actions
     needs:
       - release
+      - deploy
     runs-on: ubuntu-latest
     steps:
       - name: "♻️ remove build artifacts"
