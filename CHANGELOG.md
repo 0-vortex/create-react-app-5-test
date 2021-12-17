@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.2.0](https://github.com/0-vortex/create-react-app-5-test/compare/v1.1.1...v1.2.0) (2021-12-17)
+
+
+### 📝 Documentation
+
+* correct visualisation image and link ([2f35e0b](https://github.com/0-vortex/create-react-app-5-test/commit/2f35e0b2bb666764e52a3ec68d616b6b2d07950d))
+
 ### [1.1.1](https://github.com/0-vortex/create-react-app-5-test/compare/v1.1.0...v1.1.1) (2021-12-17)
 
 
