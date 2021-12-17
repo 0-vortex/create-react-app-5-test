@@ -24,7 +24,7 @@ import {
   useEmoji,
 } from "@remirror/react";
 import {EmojiPopupComponent} from "@remirror/react-components";
-// import emojiData from "svgmoji/emoji-github";
+import emojiData from "svgmoji/emoji-github";
 import {SubtleLink} from "../styles/Typography";
 const extensions = () => [
   new CodeExtension(),
@@ -34,13 +34,13 @@ const extensions = () => [
   new ItalicExtension(),
   new TableExtension(),
   new MarkdownExtension(),
-  // new EmojiExtension({
-  //   data: emojiData,
-  //   moji: "noto",
-  //   fallback: ":-)",
-  //   suggestionCharacter: ":",
-  //   plainText: true,
-  // }),
+  new EmojiExtension({
+    data: emojiData,
+    moji: "noto",
+    fallback: ":-)",
+    suggestionCharacter: ":",
+    plainText: true,
+  }),
 ];
 const EmojiEditor = () => {
   useEmoji();
