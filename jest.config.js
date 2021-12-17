@@ -29,7 +29,8 @@ module.exports = {
   "modulePaths": [],
   "moduleNameMapper": {
     "^react-native$": "react-native-web",
-    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+    "react-markdown": "<rootDir>/config/jest/reactMarkdownTransform.js"
   },
   "moduleFileExtensions": [
     "web.js",
