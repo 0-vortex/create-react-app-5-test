@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+<div align="center">
+  <br>
+  <img alt="Open Sauced" src="https://i.ibb.co/7jPXt0Z/logo1-92f1a87f.png" width="300px">
+  <h1>🍕 Open Sauced 🍕</h1>
+  <strong>The path to your next Open Source contribution</strong>
+</div>
+<br>
+<p align="center">
+  <a href="https://github.com/0-vortex/create-react-app-5-test/actions?query=workflow%3A%22Node+CI%22">
+    <img src="https://github.com/0-vortex/create-react-app-5-test/workflows/Node%20CI/badge.svg" alt="Node CI">
+  </a>
+  <a href="https://app.netlify.com/sites/open-sauced/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/76a3de8e-270c-4adf-89d5-3a3863da74e6/deploy-status" alt="Netlify Status">
+  </a>
+  <img src="https://badgen.net/dependabot/open-sauced/open-sauced?icon=dependabot" alt="Dependabot Badge">
+  <img src="https://img.shields.io/github/languages/code-size/open-sauced/open-sauced" alt="GitHub code size in bytes">
+  <img src="https://img.shields.io/github/commit-activity/w/open-sauced/open-sauced" alt="GitHub commit activity">
+  <a href="https://github.com/0-vortex/create-react-app-5-test/issues">
+    <img src="https://img.shields.io/github/issues/open-sauced/open-sauced" alt="GitHub issues">
+  </a>
+  <a href="https://github.com/0-vortex/create-react-app-5-test/releases">
+    <img src="https://img.shields.io/github/v/release/open-sauced/open-sauced.svg?style=flat" alt="GitHub Release">
+  </a>
+  <a href="https://discord.gg/U2peSNf23P">
+    <img src="https://img.shields.io/discord/714698561081704529.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Discord">
+  </a>
+  <a href="https://twitter.com/saucedopen">
+    <img src="https://img.shields.io/twitter/follow/saucedopen?label=Follow&style=social" alt="Twitter">
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Open Sauced provides structured onboarding for new contributors to open source. This structure provides a way to track your next contributions by leveraging a unique dashboard built on top of the [GitHub GraphQL API](https://docs.github.com/en/free-pro-team@latest/graphql).
 
-## Available Scripts
+[![open-sauced-screencap](./src/images/homepage.png)
+](https://opensauced.pizza)
 
-In the project directory, you can run:
+## 🤝 Contributing
 
-### `npm start`
+We encourage you to contribute to Open Sauced! Please check out the [Contributing guide](https://docs.opensauced.pizza/contributing/introduction-to-contributing/) for guidelines about how to proceed.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img align="right" src="https://i.ibb.co/CJfW18H/ship.gif" width="200"/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📖 Prerequisites
 
-### `npm test`
+In order to run the project from a container we need `node>=14`, `npm>=7` and `docker>=20` installed on our development machines.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🖥️ Local development
 
-### `npm run build`
+```sh
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🧪 Test
+For running the test suite, use the following command. Since the tests run in watch mode by default, some users may encounter errors about too many files being open. In this case, it may be beneficial to [install watchman](https://facebook.github.io/watchman/docs/install.html).
+```sh
+# the tests will run in watch mode by default
+npm test
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# to clean snapshots
+npm run clean
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📙 Storybook
 
-### `npm run eject`
+Storybook is being leveraged to mock out visual React components. The latest version of the design system can be found at this [URL](https://sauced-components.netlify.app/).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+npm run storybook
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![storybook example screenshot](https://user-images.githubusercontent.com/5713670/68147486-0cd14600-ff32-11e9-8cc0-fd91f4171b87.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🔑 Authentication
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Authentication is handled through [OneGraph's AuthGuardian](https://www.onegraph.com/docs/auth_guardian.html) service. 
 
-## Learn More
+### 💾 Database
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project uses GitHub as a database. When you login, you will be presented with a button to create a goals repository. That repository template lives at [open-sauced/goals-template](https://github.com/open-sauced/goals-template).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 💨 Service Worker
 
-### Code Splitting
+This project uses the sw-precache to kickstart an offline cache. The offline cache only registers in production. If service needs to be manually removed make an **unregister** call from the registerServiceWorker.js import. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 🌙 Dark Mode
 
-### Analyzing the Bundle Size
+This project supports "dark mode" styling, and by default it will follow the color preference on your device. It also allows for overriding this using buttons at the top right of the screen, which will persist the preference to local storage on your device. More info about color preference web API's can be found here: [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 📝 Markdown Support
 
-### Making a Progressive Web App
+This project leverages [Remirror](https://remirror.io/) for a delightful experience in documenting your Open Source goals. The editor supports markdown features including heading levels, bulleted lists, text formatting, code snippets, and emojis!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🍕 Community
 
-### Advanced Configuration
+Got Questions? Join the conversation in our [Discord](https://discord.gg/U2peSNf23P).  
+Find Open Sauced videos and release overviews on our [YouTube Channel](https://www.youtube.com/channel/UCklWxKrTti61ZCROE1e5-MQ).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Repository Visualization 
 
-### Deployment
+![Visualization of this repository](public/diagram.svg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## ⚖️ LICENSE
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT © [Open Sauced](LICENSE)

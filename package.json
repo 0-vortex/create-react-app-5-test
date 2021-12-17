@@ -1,7 +1,33 @@
 {
-  "name": "cra5",
-  "version": "0.1.0",
+  "name": "create-react-app-5-test",
+  "description": "Open Sauced provides structured onboarding for new contributors to open source. This structure provides a way to track your next contributions by leveraging a unique dashboard built on top of the GitHub GraphQL API.",
+  "version": "0.0.0-development",
   "private": true,
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "bugs": "https://github.com/0-vortex/create-react-app-5-test/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/0-vortex/create-react-app-5-test.git"
+  },
+  "engines": {
+    "node": ">=14",
+    "npm": ">=7"
+  },
+  "scripts": {
+    "preinstall": "npx @open-sauced/check-engines",
+    "prestart": "npx @open-sauced/check-engines",
+    "push": "npx @open-sauced/conventional-commit",
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js",
+    "storybook": "npx start-storybook -p 6006",
+    "build-storybook": "npx build-storybook",
+    "lint": "eslint . --report-unused-disable-directives",
+    "format": "npm run lint -- --fix"
+  },
   "dependencies": {
     "@apollo/client": "^3.5.6",
     "@primer/octicons-react": "^16.2.0",
@@ -96,18 +122,6 @@
     "@storybook/api": "^6.4.9",
     "@storybook/react": "^6.4.9",
     "storybook-dark-mode": "^1.0.8"
-  },
-  "scripts": {
-    "preinstall": "npx @open-sauced/check-engines",
-    "prestart": "npx @open-sauced/check-engines",
-    "push": "npx @open-sauced/conventional-commit",
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
-    "storybook": "npx start-storybook -p 6006",
-    "build-storybook": "npx build-storybook",
-    "lint": "eslint . --report-unused-disable-directives",
-    "format": "npm run lint -- --fix"
   },
   "browserslist": {
     "production": [
