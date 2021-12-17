@@ -170,3 +170,4 @@ jobs:
           name: |
             build
             docker
+            diagram
