@@ -5,6 +5,14 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.2.4](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.3...v1.2.4) (2021-12-19)
+
+
+### 🤖 Build System
+
+* update all create-react-app dependencies again ([1e95a15](https://github.com/0-vortex/create-react-app-5-test/commit/1e95a1515e7f172673946fd583aecb1a2ca08d04))
+* update more deps and workbox ([463e932](https://github.com/0-vortex/create-react-app-5-test/commit/463e932a1fe35b1f7e89e510d8639ae543aaa78e))
+
 ### [1.2.3](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.2...v1.2.3) (2021-12-19)
 
 
