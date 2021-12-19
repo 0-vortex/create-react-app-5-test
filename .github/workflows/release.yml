@@ -144,10 +144,6 @@ jobs:
           name: build
           path: build
 
-      - run: |
-          ls -laHh .
-          ls -laHh ./build
-
       - name: "🚀 deploy static"
         uses: peaceiris/actions-gh-pages@v3
         with:
