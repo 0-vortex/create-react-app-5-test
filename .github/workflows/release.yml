@@ -142,9 +142,11 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: .
+          path: build
 
-      - run: ls -laHh .
+      - run: |
+          ls -laHh .
+          ls -laHh ./build
 
       - name: "🚀 deploy static"
         uses: peaceiris/actions-gh-pages@v3
