@@ -6,23 +6,20 @@
 </div>
 <br>
 <p align="center">
+  <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/codeql-analysis.yml">
+    <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL" style="max-width: 100%;">
+  </a>
   <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/compliance.yml">
     <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/compliance.yml/badge.svg" alt="Compliance" style="max-width: 100%;">
-  </a>
-  <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/release.yml">
-    <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;">
   </a>
   <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/development.yml">
     <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/development.yml/badge.svg" alt="Development" style="max-width: 100%;">
   </a>
+  <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/release.yml">
+    <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;">
+  </a>
   <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/storybook.yml">
     <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/storybook.yml/badge.svg" alt="Publish stories if changed" style="max-width: 100%;">
-  </a>
-  <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/triage.yml">
-    <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/triage.yml/badge.svg" alt="Triage" style="max-width: 100%;">
-  </a>
-  <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/codeql-analysis.yml">
-    <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL" style="max-width: 100%;">
   </a>
   <a href="https://app.netlify.com/sites/open-sauced/deploys">
     <img src="https://api.netlify.com/api/v1/badges/76a3de8e-270c-4adf-89d5-3a3863da74e6/deploy-status" alt="Netlify Status">
