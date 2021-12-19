@@ -1,3 +1,8 @@
+[![Compliance](https://github.com/open-sauced/open-sauced/actions/workflows/compliance.yml/badge.svg)](https://github.com/open-sauced/open-sauced/actions/workflows/compliance.yml)
+[![Development](https://github.com/open-sauced/open-sauced/actions/workflows/development.yml/badge.svg)](https://github.com/open-sauced/open-sauced/actions/workflows/development.yml)
+[![Publish stories if changed](https://github.com/open-sauced/open-sauced/actions/workflows/storybook.yml/badge.svg)](https://github.com/open-sauced/open-sauced/actions/workflows/storybook.yml)
+[![Triage](https://github.com/open-sauced/open-sauced/actions/workflows/triage.yml/badge.svg)](https://github.com/open-sauced/open-sauced/actions/workflows/triage.yml)
+
 <div align="center">
   <br>
   <img alt="Open Sauced" src="https://i.ibb.co/7jPXt0Z/logo1-92f1a87f.png" width="300px">
@@ -6,20 +11,23 @@
 </div>
 <br>
 <p align="center">
-  <a href="https://github.com/0-vortex/create-react-app-5-test/actions?query=workflow%3A%22Node+CI%22">
-    <img src="https://github.com/0-vortex/create-react-app-5-test/workflows/Node%20CI/badge.svg" alt="Node CI">
+  <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/release.yml">
+    <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;">
+  </a>
+  <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/codeql-analysis.yml">
+    <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL" style="max-width: 100%;">
   </a>
   <a href="https://app.netlify.com/sites/open-sauced/deploys">
     <img src="https://api.netlify.com/api/v1/badges/76a3de8e-270c-4adf-89d5-3a3863da74e6/deploy-status" alt="Netlify Status">
   </a>
-  <img src="https://badgen.net/dependabot/open-sauced/open-sauced?icon=dependabot" alt="Dependabot Badge">
-  <img src="https://img.shields.io/github/languages/code-size/open-sauced/open-sauced" alt="GitHub code size in bytes">
-  <img src="https://img.shields.io/github/commit-activity/w/open-sauced/open-sauced" alt="GitHub commit activity">
+  <img src="https://badgen.net/dependabot/0-vortex/create-react-app-5-test?icon=dependabot" alt="Dependabot Badge">
+  <img src="https://img.shields.io/github/languages/code-size/0-vortex/create-react-app-5-test" alt="GitHub code size in bytes">
+  <img src="https://img.shields.io/github/commit-activity/w/0-vortex/create-react-app-5-test" alt="GitHub commit activity">
   <a href="https://github.com/0-vortex/create-react-app-5-test/issues">
-    <img src="https://img.shields.io/github/issues/open-sauced/open-sauced" alt="GitHub issues">
+    <img src="https://img.shields.io/github/issues/0-vortex/create-react-app-5-test" alt="GitHub issues">
   </a>
   <a href="https://github.com/0-vortex/create-react-app-5-test/releases">
-    <img src="https://img.shields.io/github/v/release/open-sauced/open-sauced.svg?style=flat" alt="GitHub Release">
+    <img src="https://img.shields.io/github/v/release/0-vortex/create-react-app-5-test.svg?style=flat" alt="GitHub Release">
   </a>
   <a href="https://discord.gg/U2peSNf23P">
     <img src="https://img.shields.io/discord/714698561081704529.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2" alt="Discord">
@@ -47,12 +55,14 @@ In order to run the project from a container we need `node>=14`, `npm>=7` and `d
 ### 🖥️ Local development
 
 ```sh
-npm install
+npm ci
 npm start
 ```
 
 ### 🧪 Test
+
 For running the test suite, use the following command. Since the tests run in watch mode by default, some users may encounter errors about too many files being open. In this case, it may be beneficial to [install watchman](https://facebook.github.io/watchman/docs/install.html).
+
 ```sh
 # the tests will run in watch mode by default
 npm test
@@ -73,7 +83,7 @@ npm run storybook
 
 ### 🔑 Authentication
 
-Authentication is handled through [OneGraph's AuthGuardian](https://www.onegraph.com/docs/auth_guardian.html) service. 
+Authentication is handled through [OneGraph's AuthGuardian](https://www.onegraph.com/docs/auth_guardian.html) service.
 
 ### 💾 Database
 
@@ -81,7 +91,7 @@ This project uses GitHub as a database. When you login, you will be presented wi
 
 ### 💨 Service Worker
 
-This project uses the sw-precache to kickstart an offline cache. The offline cache only registers in production. If service needs to be manually removed make an **unregister** call from the registerServiceWorker.js import. 
+This project uses the sw-precache to kickstart an offline cache. The offline cache only registers in production. If service needs to be manually removed make an **unregister** call from the registerServiceWorker.js import.
 
 ### 🌙 Dark Mode
 
@@ -98,7 +108,8 @@ Find Open Sauced videos and release overviews on our [YouTube Channel](https://w
 
 ## 🎦 Repository Visualization
 
-![Visualization of this repository](public/diagram.svg)
+[![Visualization of this repository](./public/diagram.svg)
+](./src)
 
 ## ⚖️ LICENSE
 

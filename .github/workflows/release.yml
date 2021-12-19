@@ -130,9 +130,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
-    environment:
-      name: gh-pages
-      url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
     name: Deploy to static
     needs:
       - release
