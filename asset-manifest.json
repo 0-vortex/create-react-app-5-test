@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/create-react-app-5-test/static/css/main.24c5d9d7.css",
-    "main.js": "/create-react-app-5-test/static/js/main.16f9c4cf.js",
+    "main.js": "/create-react-app-5-test/static/js/main.91c525d5.js",
     "static/js/787.a8cc8ee0.chunk.js": "/create-react-app-5-test/static/js/787.a8cc8ee0.chunk.js",
     "static/media/404.svg": "/create-react-app-5-test/static/media/404.6ab0b3d5109b22b5be3b8ceced7675d5.svg",
     "static/media/face.png": "/create-react-app-5-test/static/media/face.84af80f48e0c37f6ffef.png",
@@ -50,11 +50,11 @@
     "static/media/chevron-left.svg": "/create-react-app-5-test/static/media/chevron-left.039367c1f2fb1957f03ae7855cad338e.svg",
     "static/media/chevron-right.svg": "/create-react-app-5-test/static/media/chevron-right.6affbfab1591139b5e919082fed3a953.svg",
     "main.24c5d9d7.css.map": "/create-react-app-5-test/static/css/main.24c5d9d7.css.map",
-    "main.16f9c4cf.js.map": "/create-react-app-5-test/static/js/main.16f9c4cf.js.map",
+    "main.91c525d5.js.map": "/create-react-app-5-test/static/js/main.91c525d5.js.map",
     "787.a8cc8ee0.chunk.js.map": "/create-react-app-5-test/static/js/787.a8cc8ee0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24c5d9d7.css",
-    "static/js/main.16f9c4cf.js"
+    "static/js/main.91c525d5.js"
   ]
 }
