@@ -27,7 +27,7 @@
     "coverage": "npm test -- --coverage --watchAll=false",
     "storybook": "npx start-storybook -p 6006",
     "build-storybook": "npx build-storybook",
-    "lint": "eslint . --report-unused-disable-directives",
+    "lint": "npx eslint . --report-unused-disable-directives",
     "format": "npm run lint -- --fix"
   },
   "dependencies": {
