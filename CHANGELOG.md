@@ -5,6 +5,18 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.2.6](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.5...v1.2.6) (2021-12-19)
+
+
+### 🤖 Build System
+
+* update shrinkwraps to latest versions ([f56430b](https://github.com/0-vortex/create-react-app-5-test/commit/f56430b1b849b9321546309810bb2bce3843e85e))
+
+
+### 🔁 Continuous Integration
+
+* correct test release ([21c6813](https://github.com/0-vortex/create-react-app-5-test/commit/21c681399d64d3f00500592d3ba40c7276a27fe9))
+
 ### [1.2.5](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.4...v1.2.5) (2021-12-19)
 
 
