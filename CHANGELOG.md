@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.2.3](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.2...v1.2.3) (2021-12-19)
+
+
+### ✅ Tests
+
+* attempt to check badges ([#2](https://github.com/0-vortex/create-react-app-5-test/issues/2)) ([e76d3e3](https://github.com/0-vortex/create-react-app-5-test/commit/e76d3e3f23289b354d10ce0f3f91afc53b5a88db))
+
 ### [1.2.2](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.1...v1.2.2) (2021-12-19)
 
 
