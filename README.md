@@ -1,7 +1,6 @@
+dstn
+
 [![Compliance](https://github.com/open-sauced/open-sauced/actions/workflows/compliance.yml/badge.svg)](https://github.com/open-sauced/open-sauced/actions/workflows/compliance.yml)
-[![Development](https://github.com/open-sauced/open-sauced/actions/workflows/development.yml/badge.svg)](https://github.com/open-sauced/open-sauced/actions/workflows/development.yml)
-[![Publish stories if changed](https://github.com/open-sauced/open-sauced/actions/workflows/storybook.yml/badge.svg)](https://github.com/open-sauced/open-sauced/actions/workflows/storybook.yml)
-[![Triage](https://github.com/open-sauced/open-sauced/actions/workflows/triage.yml/badge.svg)](https://github.com/open-sauced/open-sauced/actions/workflows/triage.yml)
 
 <div align="center">
   <br>
@@ -13,6 +12,15 @@
 <p align="center">
   <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/release.yml">
     <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/release.yml/badge.svg" alt="Release" style="max-width: 100%;">
+  </a>
+  <a href="https://github.com/open-sauced/open-sauced/actions/workflows/development.yml">
+    <img src="https://github.com/open-sauced/open-sauced/actions/workflows/development.yml/badge.svg" alt="Development" style="max-width: 100%;">
+  </a>
+  <a href="https://github.com/open-sauced/open-sauced/actions/workflows/storybook.yml">
+    <img src="https://github.com/open-sauced/open-sauced/actions/workflows/storybook.yml/badge.svg" alt="Publish stories if changed" style="max-width: 100%;">
+  </a>
+  <a href="https://github.com/open-sauced/open-sauced/actions/workflows/triage.yml">
+    <img src="https://github.com/open-sauced/open-sauced/actions/workflows/triage.yml/badge.svg" alt="Triage" style="max-width: 100%;">
   </a>
   <a href="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/codeql-analysis.yml">
     <img src="https://github.com/0-vortex/create-react-app-5-test/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL" style="max-width: 100%;">
