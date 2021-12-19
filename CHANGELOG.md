@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.2.5](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.4...v1.2.5) (2021-12-19)
+
+
+### 🔁 Continuous Integration
+
+* test static gh-pages deploy ([c10f67e](https://github.com/0-vortex/create-react-app-5-test/commit/c10f67efdc5eb75090794b90be536ffeaa615ee3))
+
 ### [1.2.4](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.3...v1.2.4) (2021-12-19)
 
 
