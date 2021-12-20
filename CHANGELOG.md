@@ -5,6 +5,24 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.2.8](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.7...v1.2.8) (2021-12-20)
+
+
+### 🔥 Performance Improvements
+
+* optimize all svg images using static script ([7ebb509](https://github.com/0-vortex/create-react-app-5-test/commit/7ebb509b96df51b5a91bc8440c6c1d3d9d18a000))
+
+
+### ✅ Tests
+
+* correct all unit existent unit tests ([88536ff](https://github.com/0-vortex/create-react-app-5-test/commit/88536ff5521187113ac3350fa6424ac42c8c922e))
+
+
+### 🐛 Bug Fixes
+
+* correct production build and add svg optimisation script ([946e5a7](https://github.com/0-vortex/create-react-app-5-test/commit/946e5a74e40c0e0a2207b2937f411013124bd5ef))
+* correct testing workflow for upstream merge ([1e3f4a8](https://github.com/0-vortex/create-react-app-5-test/commit/1e3f4a80bba7b5edcc1f3a86ec7da435e75cfb4d))
+
 ### [1.2.7](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.6...v1.2.7) (2021-12-20)
 
 
