@@ -3,7 +3,11 @@ process.env.NODE_ENV = "development";
 module.exports = {
   "extends": [
     "react-app",
-    "react-app/jest"
+    "react-app/jest",
+    "plugin:jest-dom/recommended"
+  ],
+  "plugins": [
+    "jest-dom"
   ],
   "ignorePatterns": [
     "build",
@@ -12,6 +16,6 @@ module.exports = {
     "/**/node_modules/*"
   ],
   "rules": {
-    "no-restricted-globals": [1]
+    "no-restricted-globals": [1],
   },
 };
