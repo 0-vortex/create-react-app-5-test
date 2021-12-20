@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+### [1.2.7](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.6...v1.2.7) (2021-12-20)
+
+
+### 🔁 Continuous Integration
+
+* clean up workflows and eslint rules ([f2e216d](https://github.com/0-vortex/create-react-app-5-test/commit/f2e216dc9d70369fc20db5819224c4b2b23f8bf6))
+
 ### [1.2.6](https://github.com/0-vortex/create-react-app-5-test/compare/v1.2.5...v1.2.6) (2021-12-19)
 
 
