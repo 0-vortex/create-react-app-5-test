@@ -7,7 +7,6 @@
   "files": [
     "build/**/*"
   ],
-  "homepage": "https://0-vortex.github.io/create-react-app-5-test",
   "bugs": "https://github.com/0-vortex/create-react-app-5-test/issues",
   "repository": {
     "type": "git",
@@ -26,9 +25,9 @@
     "test": "node scripts/test.js",
     "coverage": "npm test -- --coverage --watchAll=false",
     "storybook": "npx start-storybook -p 6006",
-    "build-storybook": "npx build-storybook",
     "lint": "npx eslint . --report-unused-disable-directives",
-    "format": "npm run lint -- --fix"
+    "format": "npm run lint -- --fix",
+    "webpack:analyze": "npm run build --stats && npx webpack-bundle-analyzer ./build/bundle-stats.json build"
   },
   "dependencies": {
     "@apollo/client": "^3.5.6",
@@ -136,6 +135,7 @@
     "terser-webpack-plugin": "^5.3.0",
     "web-vitals": "^2.1.2",
     "webpack": "^5.65.0",
+    "webpack-bundle-analyzer": "^4.5.0",
     "webpack-dev-server": "^4.6.0",
     "webpack-manifest-plugin": "^4.0.2",
     "workbox-webpack-plugin": "^6.4.2"

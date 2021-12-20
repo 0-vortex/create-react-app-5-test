@@ -2,12 +2,14 @@ process.env.NODE_ENV = "development";
 
 module.exports = {
   "extends": [
-    "react-app"
+    "react-app",
+    "react-app/jest"
   ],
   "ignorePatterns": [
     "build",
     "public",
-    "stories"
+    "stories",
+    "/**/node_modules/*"
   ],
   "rules": {
     "no-restricted-globals": [1]
